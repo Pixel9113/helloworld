@@ -1,5 +1,11 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Happy)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -9,9 +15,23 @@ input.onButtonPressed(Button.AB, function () {
         # . # . #
         # # # # #
         `)
-    music.playMelody("F E A C5 C E G D ", 150)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.Sad)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
-basic.showIcon(IconNames.Asleep)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.forever(function () {
+    music.playMelody("F E A C5 C E G D ", 150)
+})
