@@ -9,7 +9,7 @@ input.onButtonPressed(Button.AB, function () {
         # . # . #
         # # # # #
         `)
-    music.playMelody("F G A E D C F C5 ", 120)
+    music.playMelody("F E A C5 C E G D ", 150)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Sad)
