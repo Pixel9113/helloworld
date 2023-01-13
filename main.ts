@@ -2,6 +2,13 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Happy)
 })
 input.onButtonPressed(Button.AB, function () {
+    basic.showLeds(`
+        # . # . #
+        . # # # .
+        # # # # #
+        # . # . #
+        # # # # #
+        `)
     music.playMelody("F G A E D C F C5 ", 120)
 })
 input.onButtonPressed(Button.B, function () {
